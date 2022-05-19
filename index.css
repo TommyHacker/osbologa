@@ -1,0 +1,138 @@
+nav {
+	height: 4rem;
+	width: 100vw;
+	background: rgb(174, 214, 226);
+	box-shadow: 0px 0px 4px;
+	padding: 1rem;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	left: 0;
+}
+body {
+	margin-bottom: 4rem;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.image-container {
+	width: 90vw;
+	max-width: 1000px;
+	margin: 8rem auto;
+	min-height: 300px;
+	height: 400px;
+	max-height: 600px;
+	overflow: hidden;
+	background-image: url('https://images.pexels.com/photos/164243/pexels-photo-164243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 4px;
+	filter: opacity(0.9);
+}
+.outer-image-banner {
+	background-image: linear-gradient(to right, white, rgb(194, 194, 194), white);
+	width: 100vw;
+	/* box-shadow: 0px 0px 4px rgb(190, 190, 190); */
+	border-radius: 50%;
+}
+
+.text-container {
+	width: 60vw;
+	margin: 0 auto;
+}
+.links {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.links a {
+	color: black;
+	padding: 1rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: 0.2s;
+}
+
+.links a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: rgb(255, 255, 255);
+}
+
+.logo {
+	margin-left: 2rem;
+	font-family: 'Pacifico', cursive;
+	font-size: 24pt;
+}
+
+.burger {
+	height: 50px;
+	width: 50px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	display: none;
+	margin-right: 2rem;
+	cursor: pointer;
+}
+.bar {
+	height: 2px;
+	width: 100%;
+	background: black;
+	border-radius: 2px;
+}
+
+.nav-dropmenu {
+
+border-radius: 3px;
+    background: black;
+	color: white;
+	height: 300px;
+	width: 200px;
+	position: absolute;
+	top: 4rem;
+	right: 0;
+	z-index: 100;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav-dropmenu a{
+    color: black;
+    box-shadow: 0px 0px 1px grey;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+	.text-container {
+		width: 100vw;
+		line-height: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.image-container {
+		width: 100vw;
+	}
+	.links {
+		display: none;
+	}
+	.burger {
+		display: flex;
+	}
+}
