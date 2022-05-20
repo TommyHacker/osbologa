@@ -10,8 +10,16 @@ img {
     padding: 20px;
 }
 
+.container {
+    font-size: large;
+}
+
 p {
     padding-top: 20px;
+}
+
+main {
+    background-color: aquamarine;
 }
 
 footer{
